@@ -16,7 +16,7 @@ body {
     height: 100vh;
     //background: linear-gradient(to right bottom, #6d327c, #485DA6, #00a1ba, #01b18e, #32b37b);
     // background: #D3D3D3;
-    background-image: url("../public/bg.jpg");
+    background-image: url("../public/back3.jfif");
     position: fixed;
     left: 0;
     top: 0;
@@ -61,4 +61,11 @@ a {
 
 * {
   box-sizing: border-box;
+}
+#shadow{
+  transition: 0.5s ease;
+
+}
+#shadow:hover{
+  box-shadow: 10px 10px 10px 10px rgba(0,0,0,0.3);
 }

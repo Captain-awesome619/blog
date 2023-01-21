@@ -74,8 +74,6 @@ content{
       }
 `;
 
-
-
   const result = await request(graphqlAPI,query,{slug});
 
   return result.post;

@@ -17,7 +17,7 @@ export default function Home({posts}){
 {posts.map((post) =>
             <PostCard  post={post.node}  key={post.title} />
           )}
-
+          
 </div>
 <div className="lg:col-span-4 col-span-1">
           <div className="lg:sticky relative top-8">
