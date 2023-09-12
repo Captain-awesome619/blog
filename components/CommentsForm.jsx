@@ -60,13 +60,14 @@ submitComment(commentObj)
 ref={commentEL}
 placeholder='Comment'
 name='comment'
-      className="p-4 outline-none w-full rounded-lg h-40 focus:ring-2 focus:ring-gray-200 bg-gray-100 text-white dark:text-white dark:bg-black"
+      className="p-4 outline-none w-full rounded-lg h-40 focus:ring-2 focus:ring-gray-200 bg-gray-100 text-black dark:text-white dark:bg-black"
 />
       </div>
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 mb-4">
-        <input type="text" ref={nameEL}  className="py-2 px-4 outline-none w-full rounded-lg focus:ring-2 focus:ring-gray-200 bg-gray-100 text-black dark:text-white" placeholder="Name" name="name"
+        <input type="text" ref={nameEL}  className="py-2 px-4 outline-none w-full rounded-lg focus:ring-2 focus:ring-gray-200 bg-gray-100 dark:bg-black text-black dark:text-white" placeholder="Name" name="name"
 />
-        <input type="email" ref={emailEL} className="py-2 px-4 outline-none w-full rounded-lg focus:ring-2 focus:ring-gray-200 bg-gray-100 text-black dark:text-white" placeholder="Email" name="email"
+        <input type="email" ref={emailEL} className="py-2 px-4 outline-none w-full rounded-lg focus:ring-2 focus:ring-gray-200 bg-gray-100
+         dark:bg-black text-black dark:text-white" placeholder="Email" name="email"
       />
       </div>
 
