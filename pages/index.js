@@ -8,7 +8,7 @@ export default function Home({posts}){
   return(
   <div className="container mx-auto px-10 mb-8">
     <Head>
-      <title>my-techstuff</title>
+      <title>Dark-Vale</title>
       <link rel="icon"></link>
     </Head>
 <FeaturedPosts/>
@@ -17,7 +17,7 @@ export default function Home({posts}){
 {posts.map((post) =>
             <PostCard  post={post.node}  key={post.title} />
           )}
-          
+
 </div>
 <div className="lg:col-span-4 col-span-1">
           <div className="lg:sticky relative top-8">
