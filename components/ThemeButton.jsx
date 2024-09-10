@@ -8,9 +8,9 @@ const ThemeButton = () =>{
         <button onClick={() => setTheme(resolvedTheme === "dark" ? "light" : "dark")} className="cursor-pointer border-0 border-transparent focus:ring-0">
 {
     resolvedTheme === "dark" ?
-    (<BsFillMoonStarsFill className="text-[25px] text-yellow-300"/>)
+    (<BsFillMoonStarsFill className="text-[25px] text-gray-400"/>)
     :
-    (<BsSun className="text-[25px] text-white"/>)
+    (<BsSun className="text-[25px] text-yellow-300"/>)
 }
         </button>
     )
