@@ -41,7 +41,10 @@ const {checked:storeData} =storeDataEL.current;
 submitComment(commentObj)
 .then((res) => {
   setShowSuccessMessage(true);
-
+ commentEL.current.value = '';
+    nameEL.current.value = '';
+    emailEL.current.value = '';
+    storeDataEL.current.checked = false;
   setTimeout(() =>{
     setShowSuccessMessage(false)
   },3000)
