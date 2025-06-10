@@ -1,14 +1,18 @@
+
 import React, {useEffect, useState} from 'react';
 import Layout from "../components/Layout"
 import { ThemeProvider } from 'next-themes';
+
 import '../styles/globals.scss'
-import Clarity from '@microsoft/clarity';
+
 
 function MyApp({ Component, pageProps }) {
-  const projectId = "rxff48maqm"
- 
-  useEffect(() => {
-     Clarity.init(projectId);
+useEffect(() => {
+    if (typeof window !== 'undefined') {
+      import('@microsoft/clarity').then(({ default: Clarity }) => {
+        Clarity.init('rxff48maqm');      
+      });
+    }
   }, []);
   return (
 <div className=' dark:bg-[url("/back1.jpg")] bg-[url("/bg.jpg")] transition duration-1000 ease-in-out'>
