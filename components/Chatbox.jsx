@@ -6,7 +6,7 @@ import { useTheme } from "next-themes";
 export default function ChatBox() {
   const [isOpen, setIsOpen] = useState(false);
   const [messages, setMessages] = useState([
-    { role: "system", content: "Hello😁!   Captain-Awesome junior at your service" },
+    { role: "system", content: "Hello😁!   Captain-Awesome junior at your service....." },
   ]);
   const [input, setInput] = useState("");
   const [loading, setLoading] = useState(false); // 🔹 loading state
