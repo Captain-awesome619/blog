@@ -3,7 +3,7 @@ import { useRouter } from 'next/dist/client/router';
 import { useState, useEffect } from 'react';
 import { PostDetail, Categories, PostWidget, Author, Comments, CommentsForm,Loader} from '../../components';
 import { getPosts, getPostDetails } from '../../services'
-import useStore from '../../zustand/store';
+
 import ChatBox from '../../components/Chatbox';
 
 const PostDetails = ({ post }) => {
@@ -13,14 +13,14 @@ const PostDetails = ({ post }) => {
   if (router.isFallback) {
     return <Loader />;
   }
-  const { user, setUser, clearUser } = useStore()
+
  useEffect(() => {
     setUser(post)
   }, [setUser])
 
   return (
     <>
-    {console.log(user)}
+ 
     <div className="container mx-auto px-10 mb-8">
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-12">
         <div className="col-span-1 lg:col-span-8">

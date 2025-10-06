@@ -19,8 +19,7 @@
     "react-icons": "^4.11.0",
     "react-multi-carousel": "^2.8.0",
     "react-spinners": "^0.17.0",
-    "sass": "^1.52.1",
-    "zustand": "^5.0.8"
+    "sass": "^1.52.1"
   },
   "devDependencies": {
     "@types/node": "17.0.4",
