@@ -14,10 +14,7 @@ const PostDetails = ({ post }) => {
     return <Loader />;
   }
 
- useEffect(() => {
-    setUser(post)
-  }, [setUser])
-
+ 
   return (
     <>
  
