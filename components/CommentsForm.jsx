@@ -81,10 +81,6 @@ name='comment'
           <label className="text-black dark:text-white cursor-pointer ml-2" htmlFor="storeData"> Save my name, email in this browser for the next time I comment.</label>
         </div>
       </div>
-
-
-
-
       {error && <p className="text-xs text-red-500">All fields are Mandatory</p>}
 
       <div className="mt-8">
