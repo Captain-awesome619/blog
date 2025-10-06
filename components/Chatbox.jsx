@@ -141,7 +141,7 @@ export default function ChatBox() {
 
             {/* 🔹 Loading text */}
             {loading && (
-             <PulseLoader color={color}  size={50}/>
+             <PulseLoader color='white'  size={50}/>
             )}
           </div>
 
