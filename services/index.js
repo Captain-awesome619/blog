@@ -36,14 +36,9 @@ export const getPosts = async () => {
     }
   `;
 
-
-
     const result = await request(graphqlAPI,query);
-
     return result.postsConnection.edges;
 };
-
-
 export const getPostDetails = async (slug) => {
   const query = gql`
   query GetPostDetails($slug: String!) {
@@ -138,12 +133,9 @@ export const getCategories = async () => {
         }
     }
   `;
-
   const result = await request(graphqlAPI, query);
-
   return result.categories;
 };
-
 export const submitComment = async (obj) => {
   const result = await fetch('/api/comments', {
     method: 'POST',
@@ -156,8 +148,6 @@ export const submitComment = async (obj) => {
   return result.json();
 };
 
-
-
 export const getComments = async (slug) => {
   const query = gql`
     query GetComments($slug:String!) {
@@ -169,10 +159,8 @@ export const getComments = async (slug) => {
     }
   `;
   const result = await request(graphqlAPI, query, { slug });
-
   return result.comments;
 };
-
 export const getFeaturedPosts = async () => {
   const query = gql`
     query GetCategoryPost() {

@@ -1,10 +1,10 @@
 import React from 'react'
 import { useRouter } from 'next/dist/client/router';
-
+import { useState, useEffect } from 'react';
 import { PostDetail, Categories, PostWidget, Author, Comments, CommentsForm,Loader} from '../../components';
 import { getPosts, getPostDetails } from '../../services'
-
-
+import useStore from '../../zustand/store';
+import ChatBox from '../../components/Chatbox';
 
 const PostDetails = ({ post }) => {
 
@@ -13,10 +13,14 @@ const PostDetails = ({ post }) => {
   if (router.isFallback) {
     return <Loader />;
   }
-
+  const { user, setUser, clearUser } = useStore()
+ useEffect(() => {
+    setUser(post)
+  }, [setUser])
 
   return (
     <>
+    {console.log(user)}
     <div className="container mx-auto px-10 mb-8">
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-12">
         <div className="col-span-1 lg:col-span-8">
@@ -24,6 +28,7 @@ const PostDetails = ({ post }) => {
           <Author author={post.author} />
           <CommentsForm slug={post.slug} />
           <Comments slug={post.slug} />
+          <ChatBox/>
         </div>
         <div className="col-span-1 lg:col-span-4">
           <div className="relative lg:sticky top-8">
@@ -36,10 +41,7 @@ const PostDetails = ({ post }) => {
   </>
 );
 };
-
-
 export default PostDetails
-
 export async function getStaticProps({params}) {
   const data = await getPostDetails(params.slug);
 

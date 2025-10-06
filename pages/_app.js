@@ -2,7 +2,6 @@
 import React, {useEffect, useState} from 'react';
 import Layout from "../components/Layout"
 import { ThemeProvider } from 'next-themes';
-
 import '../styles/globals.scss'
 
 
