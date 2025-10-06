@@ -145,7 +145,7 @@ export default function ChatBox() {
             )}
           </div>
 
-          {/* Input */}
+         
           <div style={{ display: "flex", padding: "6px" }}>
             <input
               value={input}
