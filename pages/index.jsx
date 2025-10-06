@@ -23,7 +23,6 @@ export default function Home({posts}){
           <div className="lg:sticky relative top-8">
 <PostWidget />
 <Categories />
-
             </div>
             </div>
     </div>
