@@ -6,7 +6,7 @@ import { useTheme } from "next-themes";
 export default function ChatBox() {
   const [isOpen, setIsOpen] = useState(false);
   const [messages, setMessages] = useState([
-    { role: "system", content: "What can I help you with?" },
+    { role: "system", content: "Hello😁!   Captain-Awesome junior at your service" },
   ]);
   const [input, setInput] = useState("");
   const [loading, setLoading] = useState(false); // 🔹 loading state
@@ -96,7 +96,8 @@ export default function ChatBox() {
       {/* Chat UI */}
       {isOpen && (
         <div
-        className="dark:bg-black bg-[#ADD8E6]"
+     className=' dark:bg-[url("/back1.jpg")] bg-[url("/bg.jpg")] drop-shadow-[0_0_12px_rgba(0,0,0,0.6)] 
+    dark:drop-shadow-[0_0_15px_#ADD8E6] '
           ref={chatRef}
           style={{
             position: "fixed",
@@ -104,7 +105,7 @@ export default function ChatBox() {
             right: 20,
             width: 320,
             height: 400,
-            border: "1px solid #ccc",
+            border: "2px solid #ccc",
             borderRadius: "8px",
           
             display: "flex",
@@ -169,7 +170,7 @@ export default function ChatBox() {
                 opacity: loading ? 0.5 : 1,
               }}
             >
-              <IoMdSend size={30} className="dark:text-white text-blue-600" />
+              <IoMdSend size={30}  color="white" />
             </button>
           </div>
         </div>
