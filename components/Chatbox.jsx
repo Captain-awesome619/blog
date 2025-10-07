@@ -97,7 +97,7 @@ export default function ChatBox() {
       {isOpen && (
         <div
      className=' dark:bg-[url("/back1.jpg")] bg-[url("/bg.jpg")] drop-shadow-[0_0_12px_rgba(0,0,0,0.6)] 
-    dark:drop-shadow-[0_0_15px_#ADD8E6] '
+    dark:drop-shadow-[0_0_15px_#ADD8E6]  z-50'
           ref={chatRef}
           style={{
             position: "fixed",
