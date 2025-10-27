@@ -3,6 +3,7 @@ import { GiStarsStack } from "react-icons/gi";
 import { IoMdSend } from "react-icons/io";
 import { PulseLoader } from "react-spinners";
 import { useTheme } from "next-themes";
+import { BiSolidMessageRoundedDots } from "react-icons/bi";
 export default function ChatBox() {
   const [isOpen, setIsOpen] = useState(false);
   const [messages, setMessages] = useState([
@@ -81,7 +82,7 @@ export default function ChatBox() {
         onClick={toggleChat}
         style={{ position: "fixed", bottom: 50, right: 15 }}
       >
-      <GiStarsStack
+      <BiSolidMessageRoundedDots
   size={50}
   className="
     text-black 
