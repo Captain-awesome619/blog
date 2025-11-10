@@ -54,7 +54,7 @@ export default function ChatBox() {
     }
   };
 
-  // Close when clicking outside
+  
   useEffect(() => {
     function handleClickOutside(e) {
       if (chatRef.current && !chatRef.current.contains(e.target)) {
@@ -80,7 +80,8 @@ export default function ChatBox() {
       {/* Floating button */}
       <button
         onClick={toggleChat}
-        style={{ position: "fixed", bottom: 50, right: 15 }}
+        style={{ position: "fixed", bottom: 50, }}
+        className="z-40 right-8 lg:right-[37%] "
       >
       <BiSolidMessageRoundedDots
   size={50}
@@ -89,6 +90,7 @@ export default function ChatBox() {
     dark:text-[#ADD8E6] 
     drop-shadow-[0_0_12px_rgba(0,0,0,0.6)] 
     dark:drop-shadow-[0_0_15px_#ADD8E6]
+    
   "
 />
 
@@ -97,13 +99,13 @@ export default function ChatBox() {
       {/* Chat UI */}
       {isOpen && (
         <div
-     className=' dark:bg-[url("/back1.jpg")] bg-[url("/bg.jpg")] drop-shadow-[0_0_12px_rgba(0,0,0,0.6)] 
+     className=' right-8 lg:right-[37%]  dark:bg-[url("/back1.jpg")] bg-[url("/bg.jpg")] drop-shadow-[0_0_12px_rgba(0,0,0,0.6)] 
     dark:drop-shadow-[0_0_15px_#ADD8E6]  z-50'
           ref={chatRef}
           style={{
             position: "fixed",
             bottom: 70,
-            right: 20,
+          
             width: 320,
             height: 400,
             border: "2px solid #ccc",
