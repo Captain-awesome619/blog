@@ -96,7 +96,7 @@ export default function ChatBox() {
 
       </button>
 
-      {/* Chat UI */}
+      
       {isOpen && (
         <div
      className=' right-8 lg:right-[37%]  dark:bg-[url("/back1.jpg")] bg-[url("/bg.jpg")] drop-shadow-[0_0_12px_rgba(0,0,0,0.6)] 
