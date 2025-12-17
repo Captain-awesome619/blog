@@ -15,7 +15,7 @@ useEffect(() => {
   }, []);
   return (
 <div className=' dark:bg-[url("/back1.jpg")] bg-[url("/bg.jpg")] transition duration-1000 ease-in-out'>
-
+<script async src="https://claritypulse.onrender.com/track.js" data-key="ingest_RLh6IQpUsCTqkPlfzASlTvdb"></script>
 <ThemeProvider attribute="class">
 <Layout >
       <Component {...pageProps} />
