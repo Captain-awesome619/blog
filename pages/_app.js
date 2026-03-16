@@ -5,6 +5,7 @@ import { ThemeProvider } from 'next-themes';
 import '../styles/globals.scss'
 
 
+
 function MyApp({ Component, pageProps }) {
 useEffect(() => {
     if (typeof window !== 'undefined') {
