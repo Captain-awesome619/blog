@@ -18,6 +18,7 @@ useEffect(() => {
 <script async src="https://claritypulse.onrender.com/track.js" data-key="ingest_NUo0caQ9TqNPzyNbMSMpekD8"></script>
 <ThemeProvider attribute="class">
 <Layout >
+  
       <Component {...pageProps} />
       </Layout>
       </ThemeProvider>
