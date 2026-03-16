@@ -22,8 +22,9 @@ useEffect(() => {
       <Component {...pageProps} />
       </Layout>
       </ThemeProvider>
-      
+
 </div>
+
   );
 }
 export default MyApp;
